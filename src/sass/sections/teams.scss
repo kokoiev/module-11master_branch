@@ -1,0 +1,131 @@
+.teams__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+.teams__description {
+  margin: 0 auto;
+  width: 960px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: 'Roboto';
+  text-align: center;
+  padding-bottom: 90px;
+}
+.teams__list-name {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.teams__list-prof {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.teams__div-overlay-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.teams__div-overlay-list-li {
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgb(252, 227, 138);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.teams__div-overlay-list-li:not(:last-child) {
+  border-right: solid 1px rgb(243, 129, 129);
+}
+.teams__list-icon {
+  width: 26px;
+  height: 26px;
+  fill: #f38181;
+}
+.teams__div-overlay-list-li:hover .teams__list-icon {
+  fill: white;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.teams__div-overlay-list-li:hover {
+  background-color: #f38181;
+}
+.teams__div {
+  position: relative;
+}
+.teams__div-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.8)),
+    to(rgba(243, 129, 129, 0.8))
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.8) 0%,
+    rgba(243, 129, 129, 0.8) 100%
+  );
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.8) 0%,
+    rgba(243, 129, 129, 0.8) 100%
+  );
+  -webkit-box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
+  box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
+  display: none;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.teams__item:hover .teams__div-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+}
+.teams {
+  padding-bottom: 80px;
+}
